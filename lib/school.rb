@@ -20,7 +20,7 @@ def sort
   sorted_array = @roster.each do |grade, student_name_array|
     student_name_array.sort
   end
-  end
+  
 #binding.pry
 
 end
