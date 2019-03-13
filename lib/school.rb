@@ -17,8 +17,12 @@ def grade(grade)
 end
 
 def sort
-  # @roster.sort_by {|k, v| v}.to_h
-  @roster[grade].sort
+  sorted_array = @roster.each do |grade, student_name_array|
+    student_name_array.sort { |a, b| a <=> b }
+  end
+end
+sorted_array.to_h
+
 end
 
 
