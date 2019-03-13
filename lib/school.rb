@@ -17,7 +17,8 @@ def grade(grade)
 end
 
 def sort
-  @roster.sort_by {|k, v| v}.to_h
+  # @roster.sort_by {|k, v| v}.to_h
+  @roster[grade].sort
 end
 
 
