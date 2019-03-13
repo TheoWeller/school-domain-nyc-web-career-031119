@@ -18,9 +18,10 @@ end
 
 def sort
   sorted_array = @roster.each do |grade, student_name_array|
-    student_name_array.sort
+    student_name_array.sort_by {|k, v| v}
   end
-binding.pry
+  end
+#binding.pry
 
 end
 
