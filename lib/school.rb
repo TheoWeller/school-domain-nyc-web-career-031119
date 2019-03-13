@@ -5,14 +5,14 @@ class School
 def initialize(name)
   @name = name
   def roster
-@hash = Hash.new
+@roster = {}
   end
 end
 
 def add_student(student_name, grade)
   #@grade = grade
-@hash[grade] ||= []
-@hash[grade] << student_name
+@roster[grade] ||= []
+@roster[grade] << student_name
 end
 
 
