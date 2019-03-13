@@ -1,18 +1,18 @@
 require 'pry'
 class School
-  attr_accessor :name, :hash
+  attr_accessor :name, :roster
 
 def initialize(name)
   @name = name
-  def roster
-hash = {}
+
+@roster = {}
   end
 end
 
 def add_student(student_name, grade)
   #grade = grade
-hash[grade] ||= []
-hash[grade] << student_name
+@roster[grade] ||= []
+@roster[grade] << student_name
 end
 
 
