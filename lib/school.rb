@@ -14,7 +14,6 @@ end
 
 def grade(grade)
   @roster[grade]
-
 end
 
 
