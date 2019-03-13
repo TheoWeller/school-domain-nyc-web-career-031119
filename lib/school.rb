@@ -5,7 +5,7 @@ class School
 def initialize(name)
   @name = name
   def roster
-  @hash = Hash.new
+hash = Hash.new
   end
 end
 
