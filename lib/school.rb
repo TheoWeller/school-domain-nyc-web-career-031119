@@ -12,7 +12,7 @@ end
 def add_student(student_name, grade)
   #@grade = grade
   self.@hash[grade] ||= []
-  @hash[grade] << student_name
+  self.@hash[grade] << student_name
 end
 
 
